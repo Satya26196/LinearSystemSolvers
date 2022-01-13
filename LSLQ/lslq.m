@@ -85,7 +85,7 @@ function [x, xcg, flag, it, normr, normAr, resvec, resvecAr, errvec, errveccg, e
   flag = 1;
   sigmax = 0;
   sigmin = Inf;
-  reg = lambda;
+  reg = lambda; % Without specifying lambda, which value will reg take?? This variable should be in line 121.
   % Determine dimensions m and n, and
   % form the first vectors u and v.
   % These satisfy  beta*u = b,  alpha*v = A'u.
